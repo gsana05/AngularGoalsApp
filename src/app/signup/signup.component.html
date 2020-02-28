@@ -1,0 +1,24 @@
+<div class="main-div">
+    <mat-card class = "tp-card">
+        <mat-card-content>
+            <form>
+                <mat-card-header>
+                    <mat-card-title>Sign Up</mat-card-title>
+                    <mat-card-subtitle>24 Hour Plan</mat-card-subtitle>
+                </mat-card-header>
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Email" [(ngModel)]="Email" name="Email" required>
+                </mat-form-field>
+
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+                </mat-form-field> 
+            </form>
+            <mat-card-actions>
+                <button class="log-in-button" mat-raised-button type="button" (click)="SignUpUser()">Create account</button>
+                <button mat-flat-button  ng-click="submit($event)" (click)="gotToLogIn()">Already have an account?</button>
+          </mat-card-actions> 
+        </mat-card-content>
+        
+    </mat-card>
+</div>
