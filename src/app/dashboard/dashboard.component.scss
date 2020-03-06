@@ -1,8 +1,21 @@
-.main-div{
+.main-div-sign-out{
     //height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 20px auto;
     //background: rgb(2,0,36);
     //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   }
+
+  .log-in-button{
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .dashboard-add-item{
+    width: 80%;
+    margin: 20px auto;
+  }
+  

@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
       if(user){
         if(user.uid != null){
         //this.router.navigate(['dashboard']);
-        //this.zone.run(() => { this.router.navigate(['/dashboard']); });
+        this.zone.run(() => { this.router.navigate(['/dashboard']); });
         }
       }
     })
