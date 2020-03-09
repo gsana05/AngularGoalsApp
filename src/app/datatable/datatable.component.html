@@ -5,7 +5,7 @@
 </div>
 
 <div class="mat-elevation-z8 data-table">
-  <table mat-table class="full-width-table" matSort aria-label="Elements">
+  <mat-table #table class="full-width-table" matSort aria-label="Elements">
     <!-- Id Column -->
     <ng-container matColumnDef="User">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>User</th>
@@ -26,7 +26,7 @@
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
+  </mat-table>
 
   <mat-paginator #paginator
       [length]="dataSource?.data.length"
